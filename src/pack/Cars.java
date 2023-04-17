@@ -53,9 +53,10 @@ public abstract class Cars {
 
     @Override
     public String toString() {
-        return this.getType() + ":  width=" + this.getWidth() + ", lenght=" + this.getLenght() + ", height=" + this.getHeight() + " ,  Fuel consumption ="+this.getFuel()+"L/100KM"+'}';
+        return this.getType() + ":  width=" + this.getWidth() + ", lenght=" + this.getLenght() + ", height=" + this.getHeight() + " ,  Fuel consumption ="+this.getFuel()+"L/100KM" + " , Gas consumption = "+this.getgas()+'}';
     }
     public  abstract double getFuel();
+    public  abstract double getgas();
 
     public String getType(){return "Cars";}
 }

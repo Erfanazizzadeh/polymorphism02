@@ -1,6 +1,6 @@
 package pack;
 
-public class Mini extends  Cars{
+public   class Mini extends  Cars{
     private double bock;
     private String name;//we can use it for carname with setter and getter
 
@@ -25,5 +25,11 @@ public class Mini extends  Cars{
     public double getFuel() {
         return bock*100/50;
     }
+
+    @Override
+    public double getgas() {
+        return 0;
+    }
+
     public String getType(){return "Mini Coupe";}
 }
